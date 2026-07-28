@@ -5,6 +5,7 @@ module.exports = new Pool({
     connectionString: process.env.DATABASE_URL,
     ssl: { rejectUnauthorized: false }
 });
+
 /*
 const { Pool } = require("pg");
 require("dotenv").config();   // ← Corrected here
@@ -18,7 +19,7 @@ host: process.env.DB_HOST,
   port: process.env.DB_PORT// The default port
 });
 
-the env file will include like this 
+/*the env file will include like this 
 DB_HOST=localhost
 DB_USER=postgres
 DB_DATABASE=top_users
